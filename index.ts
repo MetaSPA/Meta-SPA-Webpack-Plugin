@@ -13,6 +13,9 @@ class MetaSPAPlugin {
         namespace: "default",
         provide: []
     };
+    constructor(options: IOptions) {
+        this.options = options;
+    }
     apply(compiler: Compiler) {
         compiler.options.target = "web";
         if (!compiler.options.output) {
