@@ -29,3 +29,4 @@ var MetaSPAPlugin = /** @class */ (function () {
     return MetaSPAPlugin;
 }());
 exports.default = MetaSPAPlugin;
+module.exports = MetaSPAPlugin;

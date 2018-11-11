@@ -41,3 +41,4 @@ class MetaSPAPlugin {
 }
 
 export default MetaSPAPlugin;
+module.exports = MetaSPAPlugin;
