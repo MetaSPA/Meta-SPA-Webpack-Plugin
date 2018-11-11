@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var MetaSPAPlugin = /** @class */ (function () {
-    function MetaSPAPlugin() {
+    function MetaSPAPlugin(options) {
         this.options = {
             namespace: "default",
             provide: []
         };
+        this.options = options;
     }
     MetaSPAPlugin.prototype.apply = function (compiler) {
         compiler.options.target = "web";

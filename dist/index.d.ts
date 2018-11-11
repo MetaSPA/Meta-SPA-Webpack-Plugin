@@ -8,6 +8,7 @@ export interface IOptions {
 }
 declare class MetaSPAPlugin {
     private options;
+    constructor(options: IOptions);
     apply(compiler: Compiler): void;
 }
 export default MetaSPAPlugin;
