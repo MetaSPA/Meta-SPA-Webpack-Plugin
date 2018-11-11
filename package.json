@@ -26,5 +26,5 @@
   "keywords": [
     "webpack"
   ],
-  "description": ""
+  "description": "webpack plugin that helps export MetaSPA format JSONP"
 }
