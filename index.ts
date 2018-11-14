@@ -14,7 +14,8 @@ class MetaSPAPlugin {
         provide: []
     };
     constructor(options: IOptions) {
-        this.options = options;
+        const { namespace = "default", provide = [] } = options;
+        this.options = { namespace, provide };
     }
     apply(compiler: Compiler) {
         compiler.options.target = "web";
@@ -41,4 +42,3 @@ class MetaSPAPlugin {
 }
 
 export default MetaSPAPlugin;
-module.exports = MetaSPAPlugin;

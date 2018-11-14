@@ -6,7 +6,8 @@ var MetaSPAPlugin = /** @class */ (function () {
             namespace: "default",
             provide: []
         };
-        this.options = options;
+        var _a = options.namespace, namespace = _a === void 0 ? "default" : _a, _b = options.provide, provide = _b === void 0 ? [] : _b;
+        this.options = { namespace: namespace, provide: provide };
     }
     MetaSPAPlugin.prototype.apply = function (compiler) {
         compiler.options.target = "web";
@@ -29,4 +30,3 @@ var MetaSPAPlugin = /** @class */ (function () {
     return MetaSPAPlugin;
 }());
 exports.default = MetaSPAPlugin;
-module.exports = MetaSPAPlugin;
