@@ -26,9 +26,9 @@ class MetaSPAPlugin {
             compiler.options.externals = {};
         }
         compiler.options.output.libraryTarget = "jsonp";
-        compiler.options.output.library = `metaSPALoad({namespace: '${
-            this.options.namespace
-        }'})`;
+        // compiler.options.output.library = `metaSPALoad({namespace: '${
+        //     this.options.namespace
+        // }'})`;
         compiler.options.output.jsonpFunction = `metaSPAJsonp${
             this.options.namespace
         }`;
