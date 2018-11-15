@@ -17,7 +17,7 @@ var MetaSPAPlugin = /** @class */ (function () {
         if (!compiler.options.externals) {
             compiler.options.externals = {};
         }
-        compiler.options.output.libraryTarget = "jsonp";
+        // compiler.options.output.libraryTarget = "jsonp";
         // compiler.options.output.library = `metaSPALoad({namespace: '${
         //     this.options.namespace
         // }'})`;
